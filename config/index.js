@@ -17,6 +17,13 @@ module.exports = {
         pathRewrite: {
           '^/api': ''
         }
+      },
+      '/city': {
+        target: 'http://localhost:8888',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/city': '/static/mock'
+        }
       }
     },
 
